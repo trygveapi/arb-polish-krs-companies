@@ -1,0 +1,19 @@
+name = "polish-krs-companies"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "db-polish-krs-companies"
+database_id = "e018ac93-9b0b-4d16-a446-59dc56c95cf5"
+
+[triggers]
+crons = ["0 3 * * *"]
+
+[observability]
+enabled = true
+
+[vars]
+PRODUCT_SLUG = "polish-krs-companies"
+SOURCE_URL = "https://prs.ms.gov.pl/krs/openApi"
